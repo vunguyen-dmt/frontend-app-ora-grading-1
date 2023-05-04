@@ -61,7 +61,7 @@
   }
 
   .grading-rubric-body {
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   .grading-rubric-footer {
@@ -73,6 +73,10 @@
 
   button.pgn__stateful-btn.pgn__stateful-btn-state-pending {
     opacity: .4 !important;
+  }
+  
+  label.pgn__form-control-floating-label-text {
+    font-size: 14px;
   }
 }
 
