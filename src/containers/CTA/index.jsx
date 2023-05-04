@@ -15,7 +15,7 @@ export const CTA = () => (
       <Hyperlink
         isInline
         variant="muted"
-        destination="https://docs.google.com/forms/d/1Hu1rgJcCHl5_EtDb5Up3hiZ40sSUtkZQfRHJ3fWOvfQ/edit"
+        destination="https://docs.google.com/forms/d/e/1FAIpQLSfbywm3dLJkm9S7W6aJRDVUcmX_zy9ncZ7CgFGum3KNLg7NGw/viewform"
         target="_blank"
         showLaunchIcon={false}
       >
