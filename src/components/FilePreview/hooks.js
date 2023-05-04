@@ -12,6 +12,9 @@ import {
 
 import * as module from './hooks';
 import messages from './messages';
+import { configuration } from 'config';
+
+const baseUrl = `${configuration.LMS_BASE_URL}`;
 
 /**
  * Config data
@@ -87,7 +90,7 @@ export const renderHooks = ({
   const Renderer = module.RENDERERS[module.getFileType(file.name)];
   const rendererProps = {
     fileName: file.name,
-    url: file.downloadUrl,
+    url: file.downloadUrl && !file.downloadUrl.startsWith(baseUrl) ? `${baseEsgUrl}${file.downloadUrl}` :  file.downloadUrl,
     onError: stopLoading,
     onSuccess: () => stopLoading(),
   };
