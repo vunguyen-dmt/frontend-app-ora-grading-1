@@ -52,3 +52,11 @@ $input-focus-box-shadow: $input-box-shadow; // hack to get upgrade to paragon 4.
     overflow: hidden;
   }
 }
+
+.pgn__pageBanner-component {
+  background-color: #00262b!important;
+  color: white;
+  a {
+    color: white!important;
+    text-decoration: underline!important;
+}
