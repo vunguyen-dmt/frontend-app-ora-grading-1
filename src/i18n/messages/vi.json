@@ -17,7 +17,7 @@
   "ora-grading.RadioCriterion.optionPoints": "{points} điểm",
   "ora-grading.RadioCriterion.rubricSelectedError": "Chọn Phiếu đánh giá là bắt buộc",
   "ora-grading.CriterionFeedback.criterionFeedbackError": "Thông tin phản hồi là bắt buộc",
-  "ora-grading.CTA.feedbackMessage": "Cảm ơn bạn đã sử dụng trải nghiệm chấm điểm nhân viên ORA mới. ",
+  "ora-grading.CTA.feedbackMessage": "Cảm ơn bạn đã sử dụng trải nghiệm Giảng viên chấm điểm ORA mới. ",
   "ora-grading.CTA.linkMessage": "Cung cấp một số thông tin phản hồi",
   "ora-grading.CTA.letUsKnowMessage": " và cho chúng tôi biết những gì bạn nghĩ!",
   "ora-grading.ReviewModal.demoHeading": "Chế độ Demo",
