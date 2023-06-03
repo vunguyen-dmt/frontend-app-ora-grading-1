@@ -31,9 +31,7 @@ import {
  *   },
  * }
  */
-const initializeApp = () => get(`${urls.oraInitializeUrl}?oraLocation=${encodeURIComponent(locationId)}`),
-).then(response => response.data);
-
+const initializeApp = () => get(`${urls.oraInitializeUrl}?oraLocation=${encodeURIComponent(locationId)}`).then(response => response.data);
 /**
  * get('/api/submission', { oraLocation, submissionUUID })
  * @return {
