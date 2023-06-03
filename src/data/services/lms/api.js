@@ -31,10 +31,7 @@ import {
  *   },
  * }
  */
-const initializeApp = () => get(
-  stringifyUrl(urls.oraInitializeUrl, {
-    [paramKeys.oraLocation]: locationId,
-  }),
+const initializeApp = () => get(`${urls.oraInitializeUrl}?oraLocation=${encodeURIComponent(locationId)}`),
 ).then(response => response.data);
 
 /**
