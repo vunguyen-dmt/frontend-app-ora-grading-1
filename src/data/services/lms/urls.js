@@ -1,7 +1,7 @@
 import { StrictDict } from 'utils';
 import { configuration } from 'config';
 
-const baseUrl  = () => getConfig().LMS_BASE_URL;
+const baseUrl = `${configuration.LMS_BASE_URL}`;
 
 const api = `${baseUrl}/api/`;
 const baseEsgUrl = `${api}ora_staff_grader/`;
