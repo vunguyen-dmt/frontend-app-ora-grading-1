@@ -1,7 +1,7 @@
 const configuration = {
   // BASE_URL: process.env.BASE_URL,
-  LMS_BASE_URL: process.env.LMS_BASE_URL,
-  //LMS_BASE_URL: 'https://lms.goamazing.org'
+  //LMS_BASE_URL: process.env.LMS_BASE_URL,
+  LMS_BASE_URL: 'https://lms.goamazing.org'
   // LOGIN_URL: process.env.LOGIN_URL,
   // LOGOUT_URL: process.env.LOGOUT_URL,
   // CSRF_TOKEN_API_PATH: process.env.CSRF_TOKEN_API_PATH,
