@@ -17,10 +17,11 @@ import './ReviewActions.scss';
 
 export const ReviewActions = ({
   gradingStatus,
-  toggleShowRubric,
+  userDisplay,
+  fullnameDisplay,
   score: { pointsEarned, pointsPossible },
   showRubric,
-  userDisplay,
+  toggleShowRubric,
   isLoaded,
 }) => (
   <div>
