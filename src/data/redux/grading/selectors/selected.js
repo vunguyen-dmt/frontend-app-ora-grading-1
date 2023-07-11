@@ -106,6 +106,15 @@ selected.userDisplay = createSelector(
   (isIndividual, username, teamName) => (isIndividual ? username : teamName),
 );
 
+/**
+ * Returns the fullname for the selected submission
+ * @return {string} fullname
+ */
+selected.fullnameDisplay = createSelector(
+  [module.selected.staticData],
+  (staticData) => staticData.name,
+);
+
 /***********************************
  * Selected Submission - Grade Data
  ***********************************/
