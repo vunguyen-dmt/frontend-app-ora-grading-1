@@ -15,13 +15,14 @@ export const CTA = () => (
       <Hyperlink
         isInline
         variant="muted"
-        destination="https://docs.google.com/forms/d/1Hu1rgJcCHl5_EtDb5Up3hiZ40sSUtkZQfRHJ3fWOvfQ/edit"
+        destination="https://docs.google.com/forms/d/e/1FAIpQLSfbywm3dLJkm9S7W6aJRDVUcmX_zy9ncZ7CgFGum3KNLg7NGw/viewform"
         target="_blank"
         showLaunchIcon={false}
       >
         <FormattedMessage {...messages.ctaLinkMessage} />
       </Hyperlink>
       <FormattedMessage {...messages.ctaLetUsKnowMessage} />
+      &nbsp;Xem thêm hướng dẫn chấm điểm <a target="_blank" href="https://dlc.cirtech.edu.vn/hutech-x-doc/trai-nghiem-cham-diem-ora-moi-638188242327161309">tại đây</a>.
     </span>
   </PageBanner>
 );

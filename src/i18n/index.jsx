@@ -10,6 +10,7 @@ import ititMessages from './messages/it_IT.json';
 import ptptMessages from './messages/pt_PT.json';
 import ruMessages from './messages/ru.json';
 import ukMessages from './messages/uk.json';
+import viMessages from './messages/vi.json';
 
 const messages = {
   ar: arMessages,
@@ -23,6 +24,7 @@ const messages = {
   'pt-pt': ptptMessages,
   ru: ruMessages,
   uk: ukMessages,
+  vi: ukMessages,
 };
 
 export default messages;
