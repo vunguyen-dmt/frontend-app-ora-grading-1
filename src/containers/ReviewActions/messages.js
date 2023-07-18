@@ -16,6 +16,11 @@ const messages = defineMessages({
     defaultMessage: 'Show Rubric',
     description: 'Review pane action bar Show Rubric button text',
   },
+  studentId: {
+    id: 'ora-grading.ReviewActions.studentId',
+    defaultMessage: 'Student Id',
+    description: '',
+  },
 });
 
 export default messages;

@@ -18,6 +18,16 @@ const messages = defineMessages({
     defaultMessage: ' and let us know what you think!',
     description: 'inform user to provide feedback',
   },
+  seeMoreInstructions: {
+    id: 'ora-grading.CTA.seeMoreInstructions',
+    defaultMessage: 'See more instructions',
+    description: '',
+  },
+  here: {
+    id: 'ora-grading.CTA.here',
+    defaultMessage: 'here',
+    description: '',
+  },
 });
 
 export default StrictDict(messages);

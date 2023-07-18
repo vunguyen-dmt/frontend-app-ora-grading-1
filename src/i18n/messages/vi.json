@@ -101,5 +101,9 @@
   "ora-grading.lms-api.gradingStatusDisplay.ungraded": "Chưa chấm điểm",
   "ora-grading.lms-api.gradingStatusDisplay.locked": "Hiện đang được chấm điểm bởi người khác",
   "ora-grading.lms-api.gradingStatusDisplay.graded": "Đã hoàn thành chấm điểm",
-  "ora-grading.lms-api.gradingStatusDisplay.inProgress": "Bạn hiện đang chấm điểm câu trả lời này"
+  "ora-grading.lms-api.gradingStatusDisplay.inProgress": "Bạn hiện đang chấm điểm câu trả lời này",
+  "ora-grading.ListView.userFullName": "Họ tên",
+  "ora-grading.ReviewActions.studentId": "MSSV",
+  "ora-grading.CTA.seeMoreInstructions": "Xem thêm hướng dẫn",
+  "ora-grading.CTA.here": "tại đây"
 }

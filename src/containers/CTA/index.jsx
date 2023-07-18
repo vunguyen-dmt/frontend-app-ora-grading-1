@@ -22,7 +22,7 @@ export const CTA = () => (
         <FormattedMessage {...messages.ctaLinkMessage} />
       </Hyperlink>
       <FormattedMessage {...messages.ctaLetUsKnowMessage} />
-      &nbsp;Xem thêm hướng dẫn chấm điểm <a target="_blank" href="https://dlc.cirtech.edu.vn/hutech-x-doc/trai-nghiem-cham-diem-ora-moi-638188242327161309">tại đây</a>.
+      &nbsp;<FormattedMessage {...messages.seeMoreInstructions} />&nbsp;<a target="_blank" href="https://dlc.cirtech.edu.vn/hutech-x-doc/trai-nghiem-cham-diem-ora-moi-638188242327161309"><FormattedMessage {...messages.here} /></a>.
     </span>
   </PageBanner>
 );
