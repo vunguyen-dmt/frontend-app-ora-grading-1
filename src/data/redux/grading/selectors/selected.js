@@ -92,6 +92,11 @@ selected.username = createSelector(
   (staticData) => staticData.username,
 );
 
+selected.name = createSelector(
+  [module.selected.staticData],
+  (staticData) => staticData.name,
+);
+
 selected.teamName = createSelector(
   [module.selected.staticData],
   (staticData) => staticData.teamName,
@@ -100,10 +105,18 @@ selected.teamName = createSelector(
 selected.userDisplay = createSelector(
   [
     appSelectors.ora.isIndividual,
-    module.selected.username,
+    module.selected.name,
     module.selected.teamName,
   ],
-  (isIndividual, username, teamName) => (isIndividual ? username : teamName),
+  (isIndividual, name, teamName) => (isIndividual ? name : teamName),
+);
+
+selected.username = createSelector(
+  [
+    appSelectors.ora.isIndividual,
+    module.selected.username,
+  ],
+  (isIndividual, username) => (isIndividual ? username : ''),
 );
 
 /***********************************
