@@ -45,5 +45,6 @@ export const submissionFields = StrictDict({
   gradingStatus: 'gradingStatus',
   score: 'score',
   teamName: 'teamName',
+  name: 'name',
   username: 'username',
 });
