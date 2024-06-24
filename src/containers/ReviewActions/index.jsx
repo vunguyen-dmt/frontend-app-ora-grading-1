@@ -21,15 +21,22 @@ export const ReviewActions = ({
   score: { pointsEarned, pointsPossible },
   showRubric,
   userDisplay,
+  username,
   isLoaded,
 }) => (
   <div>
     <ActionRow className="review-actions">
       <span className="review-actions-username">
-        <span className="lead">{userDisplay}</span>
+        {/* <span className="lead">{userDisplay}</span>
         { gradingStatus && (
           <StatusBadge className="review-actions-status mr-3" status={gradingStatus} />
-        )}
+        )} */}
+        <div className="user-info-display">
+          <div>
+            <span className="lead">{userDisplay}</span>{ gradingStatus && (<StatusBadge className="review-actions-status mr-3" status={gradingStatus} />)}
+          </div>
+          <div>{username && (<span><FormattedMessage {...messages.studentId} />: {username}</span>)}</div>
+        </div>
         <span className="small">
           {pointsPossible && (
             <FormattedMessage
@@ -56,10 +63,12 @@ export const ReviewActions = ({
 ReviewActions.defaultProps = {
   isLoaded: false,
   gradingStatus: null,
+  username: '',
 };
 ReviewActions.propTypes = {
   gradingStatus: PropTypes.string,
   userDisplay: PropTypes.string.isRequired,
+  username: PropTypes.string,
   score: PropTypes.shape({
     pointsEarned: PropTypes.number,
     pointsPossible: PropTypes.number,
@@ -71,6 +80,7 @@ ReviewActions.propTypes = {
 
 export const mapStateToProps = (state) => ({
   userDisplay: selectors.grading.selected.userDisplay(state),
+  username: selectors.grading.selected.username(state),
   gradingStatus: selectors.grading.selected.gradingStatus(state),
   score: selectors.grading.selected.score(state),
   showRubric: selectors.app.showRubric(state),
