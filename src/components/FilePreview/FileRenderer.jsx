@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
-
+import { injectIntl, intlShape, FormattedMessage } from '@edx/frontend-platform/i18n';
+import { Alert } from '@openedx/paragon';
 import FileCard from './FileCard';
 import { ErrorBanner, LoadingBanner } from './Banners';
 import { renderHooks } from './hooks';
+import messages from './messages';
 
 /**
  * <FileRenderer />
@@ -23,11 +23,16 @@ export const FileRenderer = ({
   } = renderHooks({ file, intl });
   return (
     <FileCard key={file.downloadUrl} file={file}>
-      {isLoading && <LoadingBanner />}
+      {isLoading && file.downloadUrl && <LoadingBanner />}
       {errorStatus ? (
         <ErrorBanner {...error} />
       ) : (
-        <Renderer {...rendererProps} />
+        <>
+          {file.downloadUrl && <Renderer {...rendererProps} />}
+          {!file.downloadUrl && (
+          <Alert variant="danger"><FormattedMessage {...messages.fileNotFoundError} /></Alert>
+          )}
+        </>
       )}
     </FileCard>
   );
